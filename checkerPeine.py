@@ -49,7 +49,7 @@ def check_license_plate():
             print("No plates available.")
         else:
             script_dir = os.path.dirname(os.path.abspath(__file__))
-            screenshot_path = os.path.join(script_dir, "screenshot.png")
+            screenshot_path = os.path.join(script_dir, "screenshotPE.png")
             page.click('select[name="WKZRESULTLIST_WKZ"]')
             page.screenshot(path=screenshot_path)
             caption = "https://wkz.landkreis-peine.de/wkz/?renderer=responsive"
