@@ -24,7 +24,7 @@ def check_plates():
     bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
     chat_id = os.getenv("TELEGRAM_CHAT_ID")
     chars = "??"
-    nums = "?"
+    nums = "1"
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
