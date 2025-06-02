@@ -18,6 +18,9 @@ def send_telegram_photo_with_caption(token, chat_id, image_path, caption):
     return response.ok
 
 def check_plates():
+    delay = random.randint(1, 3 * 60)
+    time.sleep(delay)
+    
     bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
     chat_id = os.getenv("TELEGRAM_CHAT_ID")
     chars = "??"
