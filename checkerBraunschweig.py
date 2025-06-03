@@ -39,7 +39,7 @@ def check_plates():
         frame.locator('input[placeholder="12"]').fill(nums)
         page.keyboard.press("Enter")
 
-        page.wait_for_timeout(10000)
+        page.wait_for_timeout(20000)
 
         content = frame.locator("body").inner_text()
         if "keine verfügbaren Kennzeichen" in content:
