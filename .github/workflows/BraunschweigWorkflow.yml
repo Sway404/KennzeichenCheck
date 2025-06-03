@@ -2,7 +2,7 @@ name: WKZ BS Check
 
 on:
   schedule:
-    - cron: '*/13 4-21 * * *'
+    - cron: '*/12 4-21 * * *'
   workflow_dispatch:        
 
 jobs:
