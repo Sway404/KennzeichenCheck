@@ -2,7 +2,7 @@ name: WKZ PE Check
 
 on:
   schedule:
-    - cron: '*/12 4-21 * * *'
+    - cron: '0 9-23 * * *'
   workflow_dispatch:        
 
 jobs:
