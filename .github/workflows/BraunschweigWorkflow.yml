@@ -1,4 +1,4 @@
-name: WKZ BS Check
+name: WKZ PE Check
 
 on:
   schedule:
@@ -24,7 +24,7 @@ jobs:
           python -m playwright install
 
       - name: Run Checker
-        run: python checkerBraunschweig.py
+        run: python checkerPeine.py
         env:
             TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
             TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
