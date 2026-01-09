@@ -19,10 +19,6 @@ def send_telegram_photo_with_caption(token, chat_id, image_path, caption):
     return response.ok
 
 def check_license_plate():
-    delay = random.randint(1, 5 * 60)
-    print(f"We're waiting {delay} seconds")
-    time.sleep(delay)
-
     bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
     chat_id = os.getenv("TELEGRAM_CHAT_ID")
     chars = "??"
